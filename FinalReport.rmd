@@ -44,6 +44,33 @@ barchartGC(~infected + treatment,data=DataF, type="percent",main = "gals")
 ```
   
 Among the females that contracted aids twice as many who took the placebo. Therefore it appears that the vaccine does have a positive effect.
+
+```{r}
+DataG = filter(FinalData,sex=="guy")
+barchartGC(~infected + treatment,data=DataG)
+barchartGC(~infected + treatment,data=DataG, type="percent",main = "guys")
+
+```
+   
+Among the Males that contracted aids a third as many took the drug than the placebo. Therefore it appears that the vaccine does have a negative effect resulting into higher numbers of infected.
+   
+```{r}
+DataLGBTQ = filter(FinalData,LGBTQ=="gay")
+barchartGC(~infected + treatment,data=DataLGBTQ)
+barchartGC(~infected + treatment,data=DataLGBTQ, type="percent",main = "gays")
+
+```
+   
+Among the gay participants that contracted aids half as many took the drug than the placebo. Therefore it appears that the vaccine does have a negative effect resulting into higher numbers of infected.
+   
+```{r}
+DataLGBTQ = filter(FinalData,LGBTQ=="straight")
+barchartGC(~infected + treatment,data=DataLGBTQ)
+barchartGC(~infected + treatment,data=DataLGBTQ, type="percent",main = "straight")
+
+```
+   
+Among the straight participants that contracted aids a third as many took the placebo. Therefore it appears that the vaccine does have a positive effect.
    
 # Discussion and Conclusion
 
