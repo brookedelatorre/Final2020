@@ -149,7 +149,29 @@ fisher.test(table4)
 ```
 
 The P-value of the Drugusers results is less than 0.05 so we would reject the null hypothesis.
-
+   
 # Discussion and Conclusion
+  
+<!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhaps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+  
+## Gals 
+  
+The P-value for the gals is 2.2e-16 meaning it is less than 0.05, so we reject the null hypothesis that among the target population, the vaccine has no effect on whether one contracts the virus or not. According to the numerical and bar graph data only 33.11% of infected were Gals who took the drug where as 66.89% of the placebo takers contracted Covid19. This means that double of the gals who took the drug were infected. This would suggest that the Drug is working as intended to prevent Covid19 for gals. 
+   
+## Guys
+  
+The P-value for the guys is 0.0005801 meaning it is less than 0.05, so we reject the null hypothesis that among the target population, the vaccine has no effect on whether one contracts the virus or not.
+According to the data 58.16% of infected were Guys who took the drug where as 41.87% of the placebo takers contracted Covid19. This means that a third of the males who took the placebo were infected compared to those who took the drug. This would suggest that the Drug is causing more cases of Covid19 for Guys.
 
-<!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+## Gays
+
+The P-value for the gays is 5.741e-06 meaning it is less than 0.05, so we reject the null hypothesis that among the target population, the vaccine has no effect on whether one contracts the virus or not.
+According to the data 70.69% of infected were gays who took the drug where as 29.31% of the placebo takers contracted Covid19. This means that a third of the gays who took the placebo were infected compared to those who took the drug. This would suggest that the drug is causing more cases of Covid19 in Gays.
+
+## DrugUsers
+   
+The P-value for the DrugUsers is 0.002273 meaning it is less than 0.05, so we reject the null hypothesis that among the target population, the vaccine has no effect on whether one contracts the virus or not.According to the data only 33.33% of infected were Drugusers who took the drug where as 66.67% of the placebo takers contracted Covid19. This means that double of the people who took the drug were infected. This would suggest that the Drug is working as intended to prevent Covid19 for DrugUsers. 
+   
+## All in relation
+
+All four of the subgroups(gals,guys,gays,drugusers) had a p-value less than 0.05 resulting in rejecting the null hypothesis that among the target population, the vaccine has no effect on whether one contracts the virus or not. Meaning that there is an effect between the target population and that of the vaccine. As seen in the data Gals and Drugusers had a positive correlation with the vaccine that resulted in less infected with Covid19. However as seen in the data Guys and Gays had a negative correlation with the vaccine that resulted in more people infected with covid19. This would suggest that there is a relationship based on gender, sexual orientation, and drug usage, the vaccine will increase or decrease your likelihood of catching Covid19. 
