@@ -61,7 +61,7 @@ According to the data only 33.11% of infected were Gals who took the drug where 
 fisher.test(table1)
 ```
 
-
+The P-value of the Gals results is less than 0.05 so we would reject the null hypothesis.
 
 ## Data analysis for Guys
 
@@ -90,7 +90,7 @@ According to the data 58.16% of infected were Guys who took the drug where as 41
 fisher.test(table2)
 ```
 
-
+The P-value of the Guys results is less than 0.05 so we would reject the null hypothesis.
 
 ## Data analysis for Gays
    
@@ -119,7 +119,7 @@ According to the data 70.69% of infected were gays who took the drug where as 29
 fisher.test(table3)
 ```
    
-   
+The P-value of the Gays results is less than 0.05 so we would reject the null hypothesis.
    
 ## Data analysis for Drug users
 
@@ -148,7 +148,7 @@ According to the data only 33.33% of infected were drugusers who took the drug w
 fisher.test(table4)
 ```
 
-
+The P-value of the Drugusers results is less than 0.05 so we would reject the null hypothesis.
 
 # Discussion and Conclusion
 
