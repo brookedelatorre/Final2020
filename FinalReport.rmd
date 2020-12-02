@@ -34,7 +34,7 @@ every question is a cat~cat type.
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
-##Graphical Descriptive results
+## Analasis for Gals
   
 ```{r}
 DataF = filter(FinalData,sex=="gal")
@@ -46,6 +46,21 @@ barchartGC(~infected + treatment,data=DataF, type="percent",main = "gals")
 Among the females that contracted aids twice as many who took the placebo. Therefore it appears that the vaccine does have a positive effect.
 
 ```{r}
+table1 <- xtabs(~infected + treatment, data=DataF)
+rowPerc(table1)
+colPerc(table1)
+```
+
+
+
+```{r}
+fisher.test(table1)
+```
+
+
+## Data analasis for Guys
+
+```{r}
 DataG = filter(FinalData,sex=="guy")
 barchartGC(~infected + treatment,data=DataG)
 barchartGC(~infected + treatment,data=DataG, type="percent",main = "guys")
@@ -53,6 +68,20 @@ barchartGC(~infected + treatment,data=DataG, type="percent",main = "guys")
 ```
    
 Among the Males that contracted aids a third as many took the drug than the placebo. Therefore it appears that the vaccine does have a negative effect resulting into higher numbers of infected.
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=DataG)
+rowPerc(table1)
+colPerc(table1)
+```
+
+
+
+```{r}
+fisher.test(table1)
+```
+
+## Data analasis for Gays
    
 ```{r}
 DataLGBTQ = filter(FinalData,LGBTQ=="gay")
@@ -64,14 +93,44 @@ barchartGC(~infected + treatment,data=DataLGBTQ, type="percent",main = "gays")
 Among the gay participants that contracted aids half as many took the drug than the placebo. Therefore it appears that the vaccine does have a negative effect resulting into higher numbers of infected.
    
 ```{r}
-DataLGBTQ = filter(FinalData,LGBTQ=="straight")
-barchartGC(~infected + treatment,data=DataLGBTQ)
-barchartGC(~infected + treatment,data=DataLGBTQ, type="percent",main = "straight")
+table1 <- xtabs(~infected + treatment, data=DataLGBTQ)
+rowPerc(table1)
+colPerc(table1)
+```
+   
+   
+   
+```{r}
+fisher.test(table1)
+```   
+   
+   
+   
+## Data analasis for Drug users
+
+```{r}
+DataU = filter(FinalData,DrugUser=="yes")
+barchartGC(~infected + treatment,data=DataU)
+barchartGC(~infected + treatment,data=DataU, type="percent",main = "DrugUser")
 
 ```
    
-Among the straight participants that contracted aids a third as many took the placebo. Therefore it appears that the vaccine does have a positive effect.
+Among the DrugUser participants that contracted aids, a third as many took the placebo. Therefore it appears that the vaccine does have a positive effect.
    
+```{r}
+table1 <- xtabs(~infected + treatment, data=DataU)
+rowPerc(table1)
+colPerc(table1)
+```
+
+
+   
+```{r}
+fisher.test(table1)
+```
+
+
+
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
